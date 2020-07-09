@@ -43,7 +43,8 @@ function Animated_2_hooks() {
     Animated.timing(
       move, {
         easing: Easing.elastic(4), // Easing function here!
-        toValue: { x: 0, y: 0 } 
+        toValue: { x: 0, y: 0 },
+        useNativeDriver: false
       }
     ).start()
   })
